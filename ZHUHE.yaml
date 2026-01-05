@@ -6,7 +6,7 @@
 
 proxy-providers:
 
-  snakem2:
+  ZHUHE:
     url: "http://192.168.1.66:3001/1SzE56arUR1GedCL2mgs/download/collection/ZUHE?target=ClashMeta"  
     type: http
     interval: 86400
