@@ -56,6 +56,22 @@ proxy-providers:
     proxy: 直连 
 
 
+
+  shuaidaoya:
+    url: "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/mihomo.yaml"
+    type: http
+    interval: 86400
+    override:
+      additional-prefix: '[lagzian]'
+      skip-cert-verify: true
+      udp: true
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 180
+    proxy: 直连 
+
+
   go4:
     url: "https://raw.githubusercontent.com/go4sharing/sub/refs/heads/main/clash.yaml"
     type: http
@@ -102,6 +118,61 @@ proxy-providers:
       interval: 180
     proxy: 直连   
 
+  lagzian:
+    url: "https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/VM_TrinityBase"
+    type: http
+    interval: 86400
+    override:
+      additional-prefix: '[lagzian]'
+      skip-cert-verify: true
+      udp: true
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 180
+    proxy: 直连 
+
+  chongdong:
+    url: "https://raw.githubusercontent.com/chongdong1230/dxz/main/clash"
+    type: http
+    interval: 86400
+    override:
+      additional-prefix: '[lagzian]'
+      skip-cert-verify: true
+      udp: true
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 180
+    proxy: 直连 
+
+  pojiezhiyuanjun:
+    url: "https://raw.githubusercontent.com/pojiezhiyuanjun/2023/master/0804clash.yml"
+    type: http
+    interval: 86400
+    override:
+      additional-prefix: '[lagzian]'
+      skip-cert-verify: true
+      udp: true
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 180
+    proxy: 直连 
+
+  itxve:
+    url: "https://raw.githubusercontent.com/itxve/fetch-clash-node/main/node/ClashNode.yaml"
+    type: http
+    interval: 86400
+    override:
+      additional-prefix: '[lagzian]'
+      skip-cert-verify: true
+      udp: true
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 180
+    proxy: 直连 
 
   acymz:
     url: "https://raw.githubusercontent.com/acymz/AutoVPN/main/data/V2.txt"
@@ -187,21 +258,7 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 180
-    proxy: 直连        
-  
-  lagzian:
-    url: "https://raw.githubusercontent.com/lagzian/SS-Collector/main/SS/VM_TrinityBase"
-    type: http
-    interval: 86400
-    override:
-      additional-prefix: '[lagzian]'
-      skip-cert-verify: true
-      udp: true
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 180
-    proxy: 直连        
+    proxy: 直连              
   
 proxies:
   - {name: 直连, type: direct}
@@ -614,4 +671,5 @@ rule-providers:
   facebook_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/facebook.mrs" }
   twitter_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/twitter.mrs" }
   private_ip: { <<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geoip/private.mrs" }
+
 
